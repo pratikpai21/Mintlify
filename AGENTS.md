@@ -13,7 +13,9 @@ Only people who use the oneCommerce inbox: our clients, their admins and their t
 - Our costs, suppliers, AI models, other clients' names, or internal plans and roadmap.
 - An API reference, developer guide, or "build on top of oneCommerce" page.
 
-`scripts/check-secrets.sh` blocks the most common of these. It runs on every push (GitHub Actions) and should be run before every commit. If it flags a word, rewrite the sentence; don't weaken the check.
+`scripts/check-secrets.sh` is a hard firewall: it blocks banned words, code, keys, links to other sites, API settings and any file type outside its allowlist. It runs before every commit and push (`git config core.hooksPath scripts/hooks`) and on GitHub. Never skip it (`--no-verify`) and never weaken it. If it flags something, rewrite it for clients; if something new must stay out, add it to the list.
+
+Screenshots: only from fake test data. No real customer, phone number or client, ever.
 
 ## How to write
 

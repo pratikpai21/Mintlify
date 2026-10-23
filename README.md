@@ -12,7 +12,7 @@ Any of these publish by themselves about a minute after saving to `main`:
 
 ## Rules
 
-Client help only. No code, servers, technology, costs or secrets: see `AGENTS.md`. The safety check `scripts/check-secrets.sh` runs on every push and fails if it finds any.
+Client help only. No code, servers, technology, costs or secrets: see `AGENTS.md`. The firewall `scripts/check-secrets.sh` runs before every commit and push, and on GitHub, and blocks anything that breaks these rules. After cloning, run `git config core.hooksPath scripts/hooks` once.
 
 ## Preview on a Mac
 

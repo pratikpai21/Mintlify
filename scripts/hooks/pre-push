@@ -1,0 +1,3 @@
+#!/bin/sh
+# Blocks the push if the help site firewall fails.
+exec "$(git rev-parse --show-toplevel)/scripts/check-secrets.sh"
