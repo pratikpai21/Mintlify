@@ -1,33 +1,31 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+# oneCommerce Help: house rules
 
-# Documentation project instructions
+This repo is the public help site at docs.onecommerce.tech, built with Mintlify. Every push to `main` goes live in about a minute.
 
-## About this project
+## Who it is for
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP
-- Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP
+Only people who use the oneCommerce inbox: our clients, their admins and their team members. Never developers.
 
-## Terminology
+## Never write here (the owner's standing rule)
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- How the product works inside: code, file or folder names, technology or library names, databases, how WhatsApp linking works under the hood.
+- Anything about servers, hosting, backups, commands, ports, addresses other than onecommerce.tech / app.onecommerce.tech, keys or secrets.
+- Our costs, suppliers, AI models, other clients' names, or internal plans and roadmap.
+- An API reference, developer guide, or "build on top of oneCommerce" page.
 
-## Style preferences
+`scripts/check-secrets.sh` blocks the most common of these. It runs on every push (GitHub Actions) and should be run before every commit. If it flags a word, rewrite the sentence; don't weaken the check.
 
-{/* Add any project-specific style rules below */}
+## How to write
 
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
+- Plain, friendly English for shop owners and their staff. Short steps. Say what to click and what happens.
+- Only describe features that exist in the inbox today. The product's own in-app guide is the reference for wording.
+- Use the same button names as the inbox (✨ Summarise, I'm done, Close, ↩️ Return …).
+- Generic examples only ("Main shop", "Asha from the team"); never a real client.
+- Support: support@onecommerce.tech or WhatsApp +91 98203 69727.
 
-## Content boundaries
+## Files
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- `docs.json`: site settings and the left menu. A new page must be added there.
+- Pages are `.mdx` files with a `title` and `description` at the top.
+- Brand: Deep Green #00463C, Vivid Green #40DC3A, font Inter.
+- Preview on a Mac: `npx mint dev`, then open http://localhost:3000.
