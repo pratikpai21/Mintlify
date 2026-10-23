@@ -38,6 +38,7 @@
           "inbox/urgent-and-follow-up",
           "inbox/messages-and-media",
           "inbox/whatsapp-groups",
+          "inbox/calls",
           "inbox/reports"
         ]
       },
