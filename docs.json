@@ -39,6 +39,7 @@
           "inbox/messages-and-media",
           "inbox/whatsapp-groups",
           "inbox/calls",
+          "inbox/broadcasts",
           "inbox/reports"
         ]
       },
