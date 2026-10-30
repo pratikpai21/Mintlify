@@ -37,6 +37,7 @@
           "inbox/notes-and-quick-replies",
           "inbox/urgent-and-follow-up",
           "inbox/messages-and-media",
+          "inbox/react-copy-forward",
           "inbox/whatsapp-groups",
           "inbox/calls",
           "inbox/broadcasts",
