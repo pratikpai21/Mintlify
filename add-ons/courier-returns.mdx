@@ -1,6 +1,6 @@
 ---
 title: "Courier returns"
-description: "Book return pickups, reships and replacements from the chat."
+description: "Book return pickups, reships and replacements from the chat, and deal with returned parcels from Home."
 ---
 
 <Info>
@@ -24,14 +24,29 @@ Admins can always book. To let a team member book too, switch on **↩️ Return
     In the chat, open **Orders** and find the shipped order.
   </Step>
   <Step title="Tap ↩️ Return">
-    The form is filled in from Shopify: items, address, weight, and the warehouse it shipped from. Check it and book.
+    The form is filled in from Shopify: items, address, weight, and the warehouse it shipped from. Pick the reason and what the customer wants (a refund or a replacement), check it and book.
   </Step>
   <Step title="Send the customer the message">
     A message with the tracking link is ready in the reply box. Check it and send.
   </Step>
 </Steps>
 
-The inbox then follows the return and adds a note to the chat when the parcel is **picked up**, and again when it's **back at your warehouse**, so you know when to refund or replace. You can cancel a return until it's picked up.
+The inbox then follows the return and adds a note to the chat when the parcel is **picked up**, and again when it's **back at your warehouse**. When it's back, everyone who books returns also gets a notification, and the return waits on **🏠 Home** until someone refunds or replaces. You can cancel a return until it's picked up.
+
+## Home: returns to deal with
+
+**🏠 Home** is on the left bar (in the ☰ menu on a phone), for admins and people with **↩️ Returns** switched on. Its red count shows how many things are waiting. It covers all your WhatsApp numbers.
+
+**Back at the warehouse: refund or replace?** lists every returned parcel that's back with you, oldest first. Each one shows the order, the customer, the items, the reason, what the customer wants, and how long it's been waiting (red after 2 days). On each one:
+
+- **💸 Refund** opens the customer's chat with the refund ready for the returned items. Check the amount and refund. (Only for people who can refund.)
+- **🔄 Send replacement** opens the replacement form in the customer's chat.
+- **Open chat** takes you to the conversation, to check with the customer first.
+- **Already done** clears a return you dealt with another way, for example a refund by bank transfer.
+
+The button for what the customer asked for is green. Refunding the order, or sending a replacement for it, takes the return off Home by itself, even if you do it from the order card in the chat. Every step leaves a note in the chat.
+
+**Needs a call** lists problems on the way that a call may fix: a pickup that failed, a parcel that failed the courier's check at pickup, a delivery that failed, a shipment coming back undelivered, or a parcel the courier lost. Call the customer (or your courier company), then tap **Already done**. If something new goes wrong with the same parcel, it shows again.
 
 ## Send an order again (after RTO)
 
@@ -43,4 +58,4 @@ For a delivered order, **🔄 Send replacement** books a replacement shipment. A
 
 ## The Courier tab
 
-The **Courier** tab in the Orders panel shows everything booked from the inbox in three lists: **Returns**, **Replacements** and **Sent again**, with each one's latest status.
+The **Courier** tab in the Orders panel shows everything booked from the inbox in three lists: **Returns**, **Replacements** and **Sent again**, with each one's latest status. Returns that are back show whether they were refunded or replaced, or are still waiting.
