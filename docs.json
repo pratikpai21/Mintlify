@@ -32,6 +32,7 @@
       {
         "group": "Answering chats",
         "pages": [
+          "inbox/home",
           "inbox/who-answers",
           "inbox/finding-chats",
           "inbox/notes-and-quick-replies",
