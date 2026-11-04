@@ -54,6 +54,7 @@
         "pages": [
           "shopify/connect",
           "shopify/orders-and-products",
+          "shopify/order-tracking-reply",
           "shopify/cancel-and-refund"
         ]
       },
