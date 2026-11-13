@@ -62,7 +62,8 @@
         "group": "Add-ons",
         "pages": [
           "add-ons/website-enquiries",
-          "add-ons/courier-returns"
+          "add-ons/courier-returns",
+          "add-ons/support-tickets"
         ]
       },
       {
