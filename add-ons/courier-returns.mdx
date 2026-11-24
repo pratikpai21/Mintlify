@@ -74,6 +74,30 @@ Refunded orders don't get the button. If the parcel sent again is lost too, **�
 
 For a delivered order, **🔄 Send replacement** books a replacement shipment. Adjust your stock in Shopify by hand.
 
+## Ask the courier to bring an order back (RTO)
+
+When an order is stuck, misplaced or refused on its way, you can ask your courier company to mark it RTO (return to origin) and send it back to you. You then get it back to reuse, or, if the courier loses it, you can claim the money from them.
+
+1. Open the customer's order in the Orders panel. On a shipped order that isn't delivered yet, tap **🔙 Ask courier to RTO**.
+2. Pick why it should come back (stuck, misplaced, customer refused, or other) and add a few words if you like.
+3. Tap **Ask for RTO**.
+
+The inbox posts the request in the WhatsApp group you share with your courier: the one chosen under **Escalate delivery problems to a WhatsApp group** in **Settings** → **Shopify**, tagging the same people. The post has the order number, tracking number and reason, and never the customer's name or number. If you already asked in the group yourself, tick **Already asked in the group** and the inbox only keeps track of it. Nothing is sent to the customer.
+
+From then on, the inbox checks with the courier and moves the request along by itself, with a note in the chat each time:
+
+| Stage | What it means | What you can do |
+|---|---|---|
+| **Asked for RTO** | waiting for the courier to mark it | **Chase again** (a follow-up post in the group, once a day), **Mark lost**, **Withdraw** |
+| **Coming back** | the courier marked it RTO | Chase again, Mark lost |
+| **Back with you** | it reached you | **Received OK (reuse)** or **Received damaged** |
+| **Lost by the courier** | the courier lost it | **Claim raised**, with the amount (the order's value is filled in) |
+| **Claim raised** | waiting for the courier to pay | **Money received**, with the amount paid |
+
+If it's delivered to the customer after all, the request closes by itself.
+
+All requests are in the **RTO requests** list in the Courier tab. **Home** shows the ones that need you: not marked RTO 2 days after asking, still not back 10 days after being marked, back and not checked yet, lost with no claim, or a claim not paid after 15 days. The month's numbers on Home add how many were asked, came back and were lost, and how much was claimed and paid.
+
 ## The Courier tab
 
-The **Courier** tab in the Orders panel shows everything booked from the inbox in three lists: **Returns**, **Replacements** and **Sent again**, with each one's latest status. Returns that are back show whether they were refunded or replaced, or are still waiting.
+The **Courier** tab in the Orders panel shows everything booked from the inbox in four lists: **Returns**, **Replacements**, **Sent again** and **RTO requests**, with each one's latest status. Returns that are back show whether they were refunded or replaced, or are still waiting.
